@@ -1,11 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="nl">
 <head>
-    <meta charset="utf-8" />
-    <title>Mijn Flowchart App</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mijn Flowcharts</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<div id="canvas" style="width:100%; height:600px; border:1px solid #ccc"></div>
-<script type="module" src="main.js"></script>
+    <header id="home-header">
+        <h1>Mijn Flowcharts</h1>
+        <button id="new-design-btn">Nieuw Ontwerp</button>
+    </header>
+    <main id="flowchart-list">
+        <!-- Flowcharts worden hier dynamisch geladen -->
+    </main>
+    <footer>
+        <p>v0.1 – Eerste werkende versie</p>
+    </footer>
+    <script type="module" src="js/home.js"></script>
 </body>
 </html>
