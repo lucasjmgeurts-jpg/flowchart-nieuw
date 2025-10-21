@@ -3,8 +3,27 @@
 <head>
     <meta charset="utf-8" />
     <title>Mijn Flowchart App</title>
+    <link rel="stylesheet" href="coloris.min.css"/>
+    <script src="coloris.min.js"></script>
 </head>
 <body>
+<div>
+  <label for="solid-color">Solid Color:</label>
+  <input type="text" id="solid-color" data-coloris>
+</div>
+<div>
+  <h3>Gradient Fill</h3>
+  <label for="gradient-color-1">Color 1:</label>
+  <input type="text" id="gradient-color-1" data-coloris>
+  <label for="gradient-color-2">Color 2:</label>
+  <input type="text" id="gradient-color-2" data-coloris>
+  <label for="gradient-direction">Direction:</label>
+  <select id="gradient-direction">
+    <option value="horizontal">Horizontal</option>
+    <option value="vertical">Vertical</option>
+  </select>
+  <button id="apply-gradient">Apply Gradient</button>
+</div>
 <div id="canvas" style="width:100%; height:600px; border:1px solid #ccc"></div>
 <script type="module" src="main.js"></script>
 </body>
